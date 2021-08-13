@@ -27,7 +27,7 @@ npm i 2d-rotate
 
 ```ts
 import { rotate2d, RotationDirection } from 'rotate-2d'
-// const { rotate2d } = require('rotate-2d')
+// const { rotate2d, RotationDirection } = require('rotate-2d')
 
 // Clockwise
 rotate2d([
@@ -41,5 +41,5 @@ rotate2d([
   [1, 2, 3], // [3, 6, 9],
   [4, 5, 6], // [2, 5, 8],
   [7, 8, 9]  // [1, 4, 7]
-], RotationDirection.COUNTER_CLOCKWISE) // or 'COUNTER_CLOCKWISE' for Javascript usage
+], RotationDirection.COUNTER_CLOCKWISE)
 ```
