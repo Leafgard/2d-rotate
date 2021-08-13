@@ -1,0 +1,27 @@
+{
+  "name": "2d-rotate",
+  "version": "0.1.0",
+  "description": "Ultra fast and easy 2D matrices rotation tool",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepublish": "tsc",
+    "style": "ts-standard src/ tests/",
+    "style-fix": "ts-standard src/ tests/ --fix",
+    "prepare": "husky install"
+  },
+  "repository": "https://github.com/Leafgard/2d-rotate.git",
+  "author": "Yann SEGET <dev@leafgard.fr>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "ts-standard": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
