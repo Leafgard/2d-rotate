@@ -4,6 +4,9 @@
   "description": "Fast and easy bi-directional 2D matrices rotation tool",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
