@@ -1,6 +1,6 @@
 {
   "name": "2d-rotate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fast and easy bi-directional 2D matrices rotation tool",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,6 +19,13 @@
   "author": "Yann SEGET <dev@leafgard.fr>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "unit-testing",
+    "typescript",
+    "no-dependencies",
+    "matrix-rotation",
+    "2-dimensional"
+  ],
   "devDependencies": {
     "@types/jest": "^27.0.1",
     "husky": "^7.0.1",
