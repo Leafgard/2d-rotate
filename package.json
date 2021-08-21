@@ -1,6 +1,6 @@
 {
   "name": "2d-rotate",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Fast and easy bi-directional 2D matrices rotation tool",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
