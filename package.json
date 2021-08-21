@@ -11,8 +11,8 @@
     "test": "jest",
     "build": "tsc",
     "prepublish": "tsc",
-    "style": "ts-standard src/ tests/",
-    "style-fix": "ts-standard src/ tests/ --fix",
+    "style": "ts-standard src/",
+    "style-fix": "ts-standard src/ --fix",
     "prepare": "husky install"
   },
   "repository": "https://github.com/Leafgard/2d-rotate.git",
