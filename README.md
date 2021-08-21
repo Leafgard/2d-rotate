@@ -12,6 +12,8 @@
 * Node.JS and browser support
 * Fast, easy and lightweight (0 dependency)
 * Bi-directional rotation (clockwise, counter-clockwise)
+* Working for both square and non-square matrices
+* StandardJS
 
 ## Installation
 

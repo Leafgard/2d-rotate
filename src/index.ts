@@ -13,30 +13,13 @@ export function rotate2d <T extends {}> (
   matrix: T[][],
   rotationDirection: RotationDirection = RotationDirection.CLOCKWISE
 ): T[][] {
-  const columns: T[][] = []
-  for (let x = 0; x < matrix.length; x++) {
-    columns.push(
-      getColumn(matrix, x, rotationDirection)
-    )
+  const rows: T[][] = []
+  for (let x = 0; x < matrix[0].length; x++) {
+    const columns: T[] = []
+    for (let y = 0; y < matrix.length; y++) {
+      columns.push(matrix[y][x])
+    }
+    rows.push(rotationDirection === RotationDirection.CLOCKWISE ? columns.reverse() : columns)
   }
-  return rotationDirection === RotationDirection.CLOCKWISE ? columns : columns.reverse()
-}
-
-/**
- * Rotate matrix column by index
- * @param {T[][]} matrix Matrix in which we rotate a column
- * @param {number} columnIndex Column index
- * @param {RotationDirection} rotationDirection Rotation direction
- * @returns {T[]} Rotated matrix column
- */
-function getColumn <T extends {}> (
-  matrix: T[][],
-  columnIndex: number,
-  rotationDirection: RotationDirection
-): T[] {
-  const column: T[] = []
-  for (let i = 0; i < matrix.length; i++) {
-    column.push(matrix[i][columnIndex])
-  }
-  return rotationDirection === RotationDirection.CLOCKWISE ? column.reverse() : column
+  return rotationDirection === RotationDirection.CLOCKWISE ? rows : rows.reverse()
 }
