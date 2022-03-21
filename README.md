@@ -28,8 +28,8 @@ npm i 2d-rotate
 ## Usage
 
 ```ts
-import { rotate2d, RotationDirection } from 'rotate-2d'
-// const { rotate2d, RotationDirection } = require('rotate-2d')
+import { rotate2d, RotationDirection } from '2d-rotate'
+// const { rotate2d, RotationDirection } = require('2d-rotate')
 
 // Clockwise
 rotate2d([
